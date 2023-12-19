@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+$bg: rgb(16, 16, 16);
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    height: 80px;
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    >img {
+        height: 70%;
+    }
+
+    >div {
+        width: 100%;
+        margin-left: 3vmax;
+
+        >a {
+            margin: 1vmax;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+    }
+
+    >svg {
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(171, 171, 171);
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .header {
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 45%;
+            margin-left: 5px;
+            // width: 53px;
+            // height: 23px;
+        }
+
+        >div {
+            a {
+                font-size: 11px;
+                margin: 5px;
+
+            }
+        }
+
+        >svg {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    }
+}
